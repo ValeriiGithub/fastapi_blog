@@ -1,0 +1,19 @@
+__pycache__
+.idea
+.idea/
+
+.env
+.venv
+
+env
+
+test_db.db
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+app/.env
