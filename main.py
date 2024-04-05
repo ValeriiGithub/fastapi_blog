@@ -10,4 +10,3 @@ app = FastAPI(
 @app.get("/")
 def hello_api():
     return {"message": "Привет FastAPI🚀"}
-git
