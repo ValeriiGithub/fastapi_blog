@@ -17,3 +17,6 @@ celerybeat-schedule
 
 # dotenv
 app/.env
+
+# Файлы и папки
+about.md
