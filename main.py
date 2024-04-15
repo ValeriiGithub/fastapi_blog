@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 from core.config import settings
 from db.session import engine
 from db.base import Base
@@ -9,9 +9,17 @@ def create_tables():
     Base.metadata.create_all(bind=engine)
 
 
-def start_application(api=FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)):
-    app = api
+def include_router():
+    app.include_router(api_router)
+
+
+def start_application():
+    app = FastAPI(
+        title=settings.PROJECT_NAME,
+        version=settings.PROJECT_VERSION
+        )
     create_tables()
+    include_router(app)
     return app
 
 
