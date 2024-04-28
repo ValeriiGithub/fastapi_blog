@@ -1,2 +1,2 @@
-# fastapi_blog
+# fastapi blog
 fastapi blog
