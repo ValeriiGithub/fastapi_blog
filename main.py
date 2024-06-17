@@ -22,6 +22,7 @@ def start_application():
     include_router(app)
     return app
 
+
 app = start_application()
 
 @app.get("/")
