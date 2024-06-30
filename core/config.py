@@ -23,4 +23,5 @@ class Settings:
 
 settings = Settings()
 
+
 print(settings.DATABASE_URL)
