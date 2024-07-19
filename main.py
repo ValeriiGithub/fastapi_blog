@@ -4,7 +4,6 @@ from db.session import engine
 from db.base import Base
 from apis.base import api_router
 
-
 def create_tables():
     Base.metadata.create_all(bind=engine)
 
